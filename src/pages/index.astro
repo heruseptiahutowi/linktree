@@ -2,7 +2,7 @@
 const links = [
   {
     name:"New Writting",
-    url:"https://medium/@heruseptiahutowi",
+    url:"https://medium.com/@heruseptiahutowi",
   },
   {
     name:"Personal Website",
@@ -13,17 +13,17 @@ const links = [
 const sociallinks = [
   {
     name:"Linkedin",
-    url:"https://Linkedin/heruseptiahutowi",
+    url:"https://www.linkedin.com/in/heru-s-186146193/",
     image:"https://cdn.simpleicons.org/linkedin/white",
   },
   {
     name:"Instagram",
-    url:"https://instagram/hutowii",
+    url:"https://instagram.com/hutowii",
     image:"https://cdn.simpleicons.org/instagram/white",
   },
   {
     name:"Github",
-    url:"https://github/heruseptiahutowi",
+    url:"https://github.com/heruseptiahutowi",
     image:"https://cdn.simpleicons.org/github/white",
   },
 ];
@@ -38,11 +38,11 @@ const sociallinks = [
     <meta name="generator" content={Astro.generator} />
     <title>Heru Septia Hutowi</title>
   </head>
-  <body class="bg-gradient-to-b from-cyan-50 bg-cyan-800">
+  <body class="bg-gradient-to-b from-blue-50 bg-blue-800">
    <main class="max-w-sm w-screen min-h-screen mx-auto shadow-lg py-20 px-5 flex flex-col items-strecth justify-center">
     <div class="kotak rounded-lg w-[200px] min-h-[200px] self-center">
       <img class="w-full h-full rounded-full"
-      src="src/pages/foto profil.jpg" alt="Heruseptiahutowi">
+      src="dist/_astro/fotoprofil.jpg" alt="Heruseptiahutowi">
     </div>
 
     <div class="flex text-cyan-50 flex-col items-center mt-8">
@@ -54,7 +54,7 @@ const sociallinks = [
       {links.map(link =>(
         <li class="hover:-translate-y-1 transition duration-150 hover:shadow">
         <a href={link.url}>
-          <div class="kotak font-semibold text-white text-center tracking-wide rounded-lg w-full bg-cyan-700 hover:bg-cyan-800 duration-150 p-10 py-6">{link.name} </div>
+          <div class="kotak font-semibold text-white text-center tracking-wide rounded-lg w-full bg-blue-700 hover:bg-blue-800 duration-150 p-10 py-6">{link.name} </div>
         </a>
       </li>
       ))
@@ -65,7 +65,7 @@ const sociallinks = [
       {sociallinks.map((link) =>(
         <li class="hover:-translate-y-1 duration-100">
         <a href={link.url}>
-          <div class="rounded-full w-[60px] h-[60px] bg-cyan-700 border-2 border-cyan-700 hover:bg-cyan-800 duration-100 p-4">
+          <div class="rounded-full w-[60px] h-[60px] bg-blue-700 border-2 npm rborder-blue-700 hover:bg-blue-800 duration-100 p-4">
             <img src={link.image} alt="heruseptiahutowi"/></div>
         </a>
       </li>
