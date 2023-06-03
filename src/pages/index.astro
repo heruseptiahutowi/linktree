@@ -38,14 +38,14 @@ const sociallinks = [
     <meta name="generator" content={Astro.generator} />
     <title>Heru Septia Hutowi</title>
   </head>
-  <body class="bg-gradient-to-b from-blue-50 bg-blue-800">
+  <body class="bg-gradient-to-b from-slate-300 bg-slate-800">
    <main class="max-w-sm w-screen min-h-screen mx-auto shadow-lg py-20 px-5 flex flex-col items-strecth justify-center">
     <div class="kotak rounded-lg w-[200px] min-h-[200px] self-center">
       <img class="w-full h-full rounded-full"
       src="src/pages/fotoprofil.jpg" alt="Heruseptiahutowi">
     </div>
 
-    <div class="flex text-cyan-50 flex-col items-center mt-8">
+    <div class="flex text-gray-300 flex-col items-center mt-8">
       <h1 class="text-2xl font-bold">Heru Septia Hutowi</h1>
       <p class="text-1xl font-semibold" >Farmer and Programer</p>
     </div>
@@ -54,7 +54,7 @@ const sociallinks = [
       {links.map(link =>(
         <li class="hover:-translate-y-1 transition duration-150 hover:shadow">
         <a href={link.url}>
-          <div class="kotak font-semibold text-white text-center tracking-wide rounded-lg w-full bg-blue-700 hover:bg-blue-800 duration-150 p-10 py-6">{link.name} </div>
+          <div class="kotak font-semibold text-white text-center tracking-wide rounded-lg w-full bg-gray-700 hover:bg-gray-800 duration-150 p-10 py-6">{link.name} </div>
         </a>
       </li>
       ))
@@ -65,7 +65,7 @@ const sociallinks = [
       {sociallinks.map((link) =>(
         <li class="hover:-translate-y-1 duration-100">
         <a href={link.url}>
-          <div class="rounded-full w-[60px] h-[60px] bg-blue-700 border-2 npm rborder-blue-700 hover:bg-blue-800 duration-100 p-4">
+          <div class="rounded-full w-[60px] h-[60px] bg-slate-700 border-2 npm rborder-slate-700 hover:bg-slate-800 duration-100 p-4">
             <img src={link.image} alt="heruseptiahutowi"/></div>
         </a>
       </li>
